@@ -17,18 +17,19 @@ void linear() {
         points++;
     }
 };
+
 void noise(){
     FILE *fp=NULL;
     fp=fopen("noise.txt","w");
     /*reads information from user input*/
     double x, y;
     printf("enter start value: \n");
-    scanf("%lf", &x);
+    scanf("%lf", &y);
     int points=0;
-    while(points <50){
+    while(points <=1000){
 
-        y =sin(x);
-        x =x +1;
+        y =sin(y+x*x);
+        x =points;
 
         fprintf(fp,"%lf\t %lf\n",x,y);
         points++;
@@ -38,7 +39,7 @@ void noise(){
 
 int main() {
     printf("Linear slope:1\n");
-    printf("Sin wave:2\n");
+    printf("noise generator:2\n");
     int input;
     scanf("%d", &input);
 
