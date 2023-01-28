@@ -39,13 +39,29 @@ void noise(){
     }
 };
 
+void test(){
+    FILE *fp=NULL;
+    fp=fopen("test.txt","w");
+    /*reads information from user input*/
+    double x, y;
+    printf("enter start value: \n");
+    scanf("%lf", &y);
+    int points=0;
+    while(points <= 2){
+        y = tan(y);
+        x = points;
+        fprintf(fp, "%lf\t %lf\n",x,y);
+        points++;
+        
+    }
+};
 
 int main() {
     printf("Linear slope:1\n");
     printf("noise generator:2\n");
+    printf("testing:3\n");
     int input;
     scanf("%d", &input);
-
 
     switch(input) {
         case 1:
@@ -53,6 +69,9 @@ int main() {
         break;
         case 2:
         noise();
+        break;
+        case 3:
+        test();
         break;
     }
 };
