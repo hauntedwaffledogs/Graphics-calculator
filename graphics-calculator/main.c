@@ -6,13 +6,16 @@ void linear() {
     fp=fopen("linear.txt","w");
     /*reads information from user input*/
     double x, y;
+    double m;
     printf("enter start value: \n");
-    scanf("%lf", &y);
+    scanf("%lf", &x);
+
     int points;
     points =0;
     while(points < 2){
-        x=x+1;
-        y = y+1;
+        m = 5;
+        y = m*x+2;
+        x = points;
         fprintf(fp,"%lf\t %lf\n",x,y);
         points++;
     }
@@ -26,7 +29,7 @@ void noise(){
     printf("enter start value: \n");
     scanf("%lf", &y);
     int points=0;
-    while(points <=1000){
+    while(points <=10){
 
         y =sin(y+x*x);
         x =points;
