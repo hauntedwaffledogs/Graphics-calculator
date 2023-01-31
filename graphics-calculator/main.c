@@ -59,7 +59,9 @@ void test(){
 int main() {
     printf("Linear slope:1\n");
     printf("noise generator:2\n");
-    printf("testing:3\n");
+    printf("nothing here yet:3\n");
+    printf("nothing here yet:4\n");
+    printf("testing:5\n");
     int input;
     scanf("%d", &input);
 
@@ -71,6 +73,12 @@ int main() {
         noise();
         break;
         case 3:
+        printf("%d not an option yet\n");
+        break;
+        case 4:
+        printf("%d not an option yet\n");
+        break;
+        case 5:
         test();
         break;
     }
