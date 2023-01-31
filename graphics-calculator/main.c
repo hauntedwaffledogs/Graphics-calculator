@@ -73,11 +73,34 @@ void circle(){
   }
 };
 
+void LissajousFigure(){
+double x(double theta){
+    return sin(theta);
+}
+double y(double theta, double A,double n, double delta){
+    return A*sin(n*theta+delta);
+};
+
+double theta;
+FILE *fp=NULL;
+double A,n,delta;
+fp=fopen("lissajous.txt","w");
+/*Loop to calculate and store data-points*/
+for(theta=0;theta<=4*M_PI;theta=theta+0.01){
+    /*Change A, n or delta here*/
+    A=1;
+    n=3;
+    delta=M_PI/4;
+    fprintf(fp,"%lf\t%lf\n",x(theta),y(theta,A,n,delta));
+    
+}
+}
+
 int main() {
     printf("Linear slope:1\n");
     printf("noise generator:2\n");
     printf("Circle:3\n");
-    printf("nothing here yet:4\n");
+    printf("Lissajous Figure:4\n");
     printf("testing:5\n");
     int input;
     scanf("%d", &input);
@@ -92,7 +115,7 @@ int main() {
         circle();
         break;
         case 4:
-        printf("%d not an option yet\n");
+        LissajousFigure();
         break;
         case 5:
         test();
