@@ -100,7 +100,7 @@ int main() {
     printf("Linear slope:1\n");
     printf("noise generator:2\n");
     printf("Circle:3\n");
-    printf("Lissajous Figure:4\n");
+    printf("Lissajous Figure:4 (you can't input anything for this unless you look in the function)\n");
     printf("testing:5\n");
     int input;
     scanf("%d", &input);
