@@ -86,7 +86,7 @@ FILE *fp=NULL;
 double A,n,delta;
 fp=fopen("lissajous.txt","w");
 /*Loop to calculate and store data-points*/
-for(theta=0;theta<=4*M_PI;theta=theta+0.01){
+for(theta=0;theta<=5*M_PI;theta=theta+0.02){
     /*Change A, n or delta here*/
     A=1;
     n=3;
