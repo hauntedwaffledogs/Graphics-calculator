@@ -30,10 +30,8 @@ void noise(){
     scanf("%lf", &y);
     int points=0;
     while(points <=10){
-
         y =sin(y+x*x);
         x =points;
-
         fprintf(fp,"%lf\t %lf\n",x,y);
         points++;
     }
@@ -47,12 +45,11 @@ void test(){
     printf("enter start value: \n");
     scanf("%lf", &y);
     int points=0;
-    while(points <= 2){
+    while(points <= 1000){
         y = tan(y);
         x = points;
         fprintf(fp, "%lf\t %lf\n",x,y);
         points++;
-        
     }
 };
 
@@ -64,7 +61,6 @@ int main() {
     printf("testing:5\n");
     int input;
     scanf("%d", &input);
-
     switch(input) {
         case 1:
         linear();
