@@ -1,0 +1,2 @@
+#!/usr/bin/gnuplot -persist
+plot "/home/hauntedw/Documents/Graphics-calculator/graphics-calculator/FILE.txt" w l
