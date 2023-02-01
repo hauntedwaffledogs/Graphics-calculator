@@ -4,7 +4,7 @@
 
 int main() {
     printf("Linear slope:1\n");
-    printf("noise generator:2\n");
+    printf("sin wave:2\n");
     printf("Circle:3\n");
     printf("Lissajous Figure:4 (you can't input anything for this unless you look in the function)\n");
     printf("holter:5\n");
@@ -16,7 +16,7 @@ int main() {
         linear();
         break;
         case 2:
-        noise();
+        sinwave();
         break;
         case 3:
         circle();

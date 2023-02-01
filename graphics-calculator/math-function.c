@@ -12,16 +12,16 @@ void linear() {
 
     int points;
     points =0;
-    while(points < 20){
+    while(points < 100){
         m = 5;
-        y = m*x+2;
+        y = m*2;
         x = points;
         fprintf(fp,"%lf\t %lf\n",x,y);
         points++;
     }
 };
 
-void noise(){
+void sinwave(){
     FILE *fp=NULL;
     fp=fopen("FILE.txt","w");
     /*reads information from user input*/
@@ -30,7 +30,7 @@ void noise(){
     scanf("%lf", &y);
     int points=0;
     while(points <=1000){
-        y =sin(y+x*x);
+        y =sin(x)+y;
         x =points;
         fprintf(fp,"%lf\t %lf\n",x,y);
         points++;
@@ -45,7 +45,7 @@ void holter(){
     printf("enter start value: \n");
     scanf("%lf", &y);
     int points=0;
-    while(points <= 1000){
+    while(points <= 100){
         y = tan(y+x*2);
         x = points;
         fprintf(fp, "%lf\t %lf\n",x,y);

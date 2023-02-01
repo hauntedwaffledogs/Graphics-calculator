@@ -1,0 +1,15 @@
+#!/bin/bash
+cd /home/hauntedw/Documents/Graphics-calculator/graphics-calculator/
+
+echo input "enter either 'math'(for generating the plots) or 'plot'(for plotting the points)"
+
+read input
+
+case $input in
+	math)
+		./main
+		;;
+	plot)
+		./plot
+		;;
+esac

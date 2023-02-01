@@ -1,2 +1,5 @@
 #!/usr/bin/gnuplot -persist
+set title "Graph results"
+set xlabel "X value"
+set ylabel "Y value"
 plot "/home/hauntedw/Documents/Graphics-calculator/graphics-calculator/FILE.txt" w l
