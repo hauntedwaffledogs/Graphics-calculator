@@ -1,15 +1,22 @@
 #!/bin/bash
 cd /home/hauntedw/Documents/Graphics-calculator/graphics-calculator/
-
-echo input "enter either 'math'(for generating the plots) or 'plot'(for plotting the points)"
+clear
+echo input "the keyword is 'math'"
 
 read input
 
 case $input in
 	math)
 		./main
-		;;
-	plot)
 		./plot
-		;;
 esac
+clear
+
+
+echo "run again? yes/no"
+read again
+case $again in
+	yes)
+		./run
+esac
+clear

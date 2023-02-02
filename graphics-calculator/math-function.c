@@ -14,7 +14,7 @@ void linear() {
     points =0;
     while(points < 100){
         m = 5;
-        y = m*2;
+        y = m+2;
         x = points;
         fprintf(fp,"%lf\t %lf\n",x,y);
         points++;
