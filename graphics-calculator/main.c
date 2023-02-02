@@ -3,7 +3,7 @@
 #include "math-function.c"
 
 int main() {
-    printf("Linear slope:1\n");
+    printf("Linear slope:1(broken)\n");
     printf("sin wave:2\n");
     printf("Circle:3\n");
     printf("Lissajous Figure:4 (you can't input anything for this unless you look in the function)\n");
