@@ -5,19 +5,16 @@ void linear() {
     FILE *fp=NULL;
     fp=fopen("FILE.txt","w");
     /*reads information from user input*/
-    double x, y;
     double m;
     printf("enter start value: \n");
-    scanf("%lf", &x);
-
-    int points;
-    points =0;
-    while(points < 100){
-        m = 5;
-        y = m+2;
-        x = points;
+    scanf("%lf", &m);
+    int x;
+    int y;
+    while(x < 100){
+        y = y+m;
+        x++;
         fprintf(fp,"%lf\t %lf\n",x,y);
-        points++;
+
     }
 };
 
@@ -28,10 +25,10 @@ void sinwave(){
     double x, y;
     printf("enter start value: \n");
     scanf("%lf", &y);
-    int points=0;
-    while(points <=1000){
+    int points = 0;
+    while(points <=200){
         y =sin(x)+y;
-        x =points;
+        x = x +2;
         fprintf(fp,"%lf\t %lf\n",x,y);
         points++;
     }
@@ -45,7 +42,7 @@ void holter(){
     printf("enter start value: \n");
     scanf("%lf", &y);
     int points=0;
-    while(points <= 100){
+    while(points <= 200){
         y = tan(y+x*2);
         x = points;
         fprintf(fp, "%lf\t %lf\n",x,y);
@@ -104,7 +101,7 @@ void test(){
     printf("enter test value: \n");
     scanf("%lf", &y);
     int points=1;
-    while(points <= 100){
+    while(points <= 200){
         y = sin(y+x);
         x = points;
         fprintf(fp,"%lf\t %lf\n",x,y);

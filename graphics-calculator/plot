@@ -2,4 +2,5 @@
 set title "Graph results"
 set xlabel "X value"
 set ylabel "Y value"
+
 plot "~/Documents/Graphics-calculator/graphics-calculator/FILE.txt" w l
