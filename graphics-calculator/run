@@ -1,16 +1,11 @@
 #!/bin/bash
 cd /home/hauntedw/Documents/Graphics-calculator/graphics-calculator/
 clear
-echo input "the keyword is 'math'"
 
-read input
 
-case $input in
-	math)
-		./main
-		./plot
-esac
-clear
+./main
+./plot
+
 
 
 echo "run again? yes/no"
