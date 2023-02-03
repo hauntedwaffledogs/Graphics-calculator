@@ -3,7 +3,7 @@
 #include "math-function.c"
 
 int main() {
-    printf("Linear slope:1(Extreamly buggy, breaks any computer that runs the linear function)\n");
+    printf("Linear slope:1(buggy)\n");
     printf("sin wave:2\n");
     printf("Circle:3\n");
     printf("Lissajous Figure:4 (you can't input anything for this unless you look in the function)\n");

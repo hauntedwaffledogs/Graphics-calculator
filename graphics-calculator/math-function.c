@@ -5,14 +5,14 @@ void linear() {
     FILE *fp=NULL;
     fp=fopen("FILE.txt","w");
     /*reads information from user input*/
-    double x, y, p, b;
-    printf("enter start value and point data: \n");
-    scanf("%lf %lf", &y, &p);
-    int m = y+3;
-    x =0;
+    double y, p, b;
+    printf("enter start Y and slope value and point data: \n");
+    scanf("%lf %lf %lf", &y, &b, &p);
+    int m = y +b;
+    int x =0;
     int points = 0;
     while(points <p){
-        y = y*m +2.5;
+        y = y+m+b;
         x++;
         fprintf(fp,"%lf\t %lf\n",x,y);
         points++;
