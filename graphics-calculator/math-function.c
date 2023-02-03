@@ -7,10 +7,10 @@ void linear() {
     /*reads information from user input*/
     double x, y, m;
     int points = 0;
-    printf("test: \n");
+    printf("enter slope value: \n");
     scanf("%lf", &m);
 
-    while(points <100){
+    while(points <10){
         x = points++;
         y = y+m;
         fprintf(fp,"%lf\t %lf\n",x,y);
