@@ -5,6 +5,7 @@ void linear() {
     FILE *fp=NULL;
     fp=fopen("FILE.txt","w");
     /*reads information from user input*/
+    /*how do i close out of vim*/
     double x, y, m;
     int points = 0;
     printf("enter slope value: \n");
